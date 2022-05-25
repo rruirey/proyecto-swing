@@ -6,6 +6,7 @@ import modelo.dao.usuario.Usuario;
 import vista.reservas.Reserva;
 
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +37,19 @@ public class ControladorReservas {
 
   private void inicializarVista() {
     vista.getVentanaReservas().setVisible(true);
+
+    if (reservas.isEmpty()) {
+      return;
+    }
+
+    vista.getReservaIndexLabel().setText((index + 1) + "/" + reservas.size());
+
+    modelo.dao.reserva.Reserva reserva = reservas.get(index);
+    vista.getFechaLabel().setText(reserva.getFecha().toString());
+    vista.getDuracionLabel().setText(reserva.getDuracion() + "");
+    vista.getHoraEntradaLabel().setText(reserva.getHoraEntrada() + "");
+    vista.getTipoReservaLabel().setText(reserva.getTipoReserva().name());
+    vista.getUsuarioLabel().setText(reserva.getDniUsuario());
   }
 
   public void inicializarControlador() {
