@@ -58,11 +58,6 @@ public class ControladorReservas {
       index = reservas.size();
     }
 
-    render();
+    inicializarVista();
   }
-
-  public void render() {
-    // make graphic update
-  }
-
 }
