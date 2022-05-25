@@ -11,11 +11,20 @@ public class Reserva {
   private JButton botonCerrarSesion;
   private JButton prevPageButton;
   private JButton nextPageButton;
+  private JPanel horizontalPanel;
+  private JPanel topPanel;
+  private JPanel centerPanel;
+  private JPanel leftPanel;
+  private JLabel fechaLabel;
+  private JLabel duracionLabel;
+  private JLabel horaEntradaLabel;
+  private JLabel tipoReservaLabel;
+  private JLabel usuarioLabel;
 
   public Reserva() {
     ventanaReservas = new JFrame("Aplicación reservas");
     ventanaReservas.setContentPane(panelPrincipal);
-    ventanaReservas.setSize(800, 800);
+    ventanaReservas.setSize(500, 400);
     ventanaReservas.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     ventanaReservas.setLocationRelativeTo(null);
     // ventanaLogin.pack();

@@ -10,7 +10,7 @@
       <grid id="c2b7a" binding="panelInferior" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="South"/>
         <properties/>
-        <border type="none"/>
+        <border type="bevel-raised"/>
         <children>
           <vspacer id="38fda">
             <constraints/>
@@ -41,11 +41,119 @@
           </component>
         </children>
       </grid>
-      <grid id="74901" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
+      <grid id="74901" binding="centerPanel" layout-manager="GridLayoutManager" row-count="5" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
         <constraints border-constraint="Center"/>
         <properties/>
-        <border type="none"/>
+        <border type="bevel-raised"/>
+        <children>
+          <component id="7dba9" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-6178064"/>
+              <text value="Fecha"/>
+            </properties>
+          </component>
+          <component id="fa5e8" class="javax.swing.JLabel" binding="fechaLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="30f3f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Duracion"/>
+            </properties>
+          </component>
+          <component id="ca4c5" class="javax.swing.JLabel" binding="duracionLabel">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="95d42" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Hora entrada"/>
+            </properties>
+          </component>
+          <component id="733a7" class="javax.swing.JLabel" binding="horaEntradaLabel">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="bce5e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Tipo de reserva"/>
+            </properties>
+          </component>
+          <component id="a83a6" class="javax.swing.JLabel" binding="tipoReservaLabel">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="e626b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuario"/>
+            </properties>
+          </component>
+          <component id="fdbfb" class="javax.swing.JLabel" binding="usuarioLabel">
+            <constraints>
+              <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <hspacer id="3e876">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="2a850" binding="horizontalPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="50"/>
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="bevel-raised"/>
+        <children/>
+      </grid>
+      <grid id="9f940" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="50" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="bevel-raised"/>
+        <children/>
+      </grid>
+      <grid id="1bd9c" binding="leftPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="50" bottom="0" right="0"/>
+        <constraints border-constraint="West"/>
+        <properties/>
+        <border type="bevel-raised"/>
         <children/>
       </grid>
     </children>
