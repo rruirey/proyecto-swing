@@ -33,6 +33,18 @@
               <text value="Cerrar sesión"/>
             </properties>
           </component>
+          <component id="7fc41" class="javax.swing.JButton" binding="prevPageButton">
+            <constraints/>
+            <properties>
+              <text value="&lt;&lt;"/>
+            </properties>
+          </component>
+          <component id="41302" class="javax.swing.JButton" binding="nextPageButton">
+            <constraints/>
+            <properties>
+              <text value="&gt;&gt;"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

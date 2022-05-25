@@ -9,8 +9,10 @@ public class Reserva {
     private JPanel panelInferior;
     private JButton botonSalir;
     private JButton botonCerrarSesion;
+  private JButton prevPageButton;
+  private JButton nextPageButton;
 
-    public Reserva () {
+  public Reserva () {
         ventanaReservas = new JFrame("Aplicación reservas");
         ventanaReservas.setContentPane(panelPrincipal);
         ventanaReservas.setSize(800,800);
