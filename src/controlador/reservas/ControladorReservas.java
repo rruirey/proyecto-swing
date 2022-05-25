@@ -6,7 +6,6 @@ import modelo.dao.usuario.Usuario;
 import vista.reservas.Reserva;
 
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,12 +63,12 @@ public class ControladorReservas {
   public void handleButtonLogic(int modifier) {
     index += modifier;
 
-    if (index > reservas.size()) {
+    if (index + 1 > reservas.size()) {
       index = 0;
     }
 
     if (index < 0) {
-      index = reservas.size();
+      index = reservas.size() - 1;
     }
 
     inicializarVista();
