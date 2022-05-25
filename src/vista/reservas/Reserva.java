@@ -42,4 +42,24 @@ public class Reserva {
   public JButton getNextPageButton() {
     return nextPageButton;
   }
+
+  public JLabel getFechaLabel() {
+    return fechaLabel;
+  }
+
+  public JLabel getDuracionLabel() {
+    return duracionLabel;
+  }
+
+  public JLabel getHoraEntradaLabel() {
+    return horaEntradaLabel;
+  }
+
+  public JLabel getTipoReservaLabel() {
+    return tipoReservaLabel;
+  }
+
+  public JLabel getUsuarioLabel() {
+    return usuarioLabel;
+  }
 }
