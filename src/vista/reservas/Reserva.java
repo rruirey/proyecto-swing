@@ -20,6 +20,7 @@ public class Reserva {
   private JLabel horaEntradaLabel;
   private JLabel tipoReservaLabel;
   private JLabel usuarioLabel;
+  private JLabel reservaIndexLabel;
 
   public Reserva() {
     ventanaReservas = new JFrame("Aplicación reservas");
@@ -61,5 +62,9 @@ public class Reserva {
 
   public JLabel getUsuarioLabel() {
     return usuarioLabel;
+  }
+
+  public JLabel getReservaIndexLabel() {
+    return reservaIndexLabel;
   }
 }
