@@ -61,15 +61,7 @@ public class ControladorReservas {
   }
 
   public void handleButtonLogic(int modifier) {
-    index += modifier;
-
-    if (index + 1 > reservas.size()) {
-      index = 0;
-    }
-
-    if (index < 0) {
-      index = reservas.size() - 1;
-    }
+    index = (index + modifier) % reservas.size();
 
     inicializarVista();
   }
